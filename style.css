@@ -1,0 +1,219 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #2f2f2f;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #1a202c;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00b894;
+}
+
+header {
+  background: url('https://st3.depositphotos.com/3591429/18305/i/450/depositphotos_183057156-stock-photo-sports-tools-green-grass-concept.jpg') 
+              center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+header .content {
+  position: relative;
+  z-index: 2;
+
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #00b894;
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00a17a;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#about {
+  background-color: #e3f2fd;
+}
+
+#contact {
+  background-color: #fff3cd;
+}
+
+#about h2, #contact h2 {
+  color: #0d47a1;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p, #contact p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 0.7rem;
+  color: #0d47a1;
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #2f2f2f;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #00b894;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #00a17a;
+}
+
+footer {
+  background-color: #1a202c;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+}
+
+footer p {
+  color: #e2e8f0;
+  margin-top: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2) sepia(1) hue-rotate(30deg);
+}
